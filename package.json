@@ -1,0 +1,42 @@
+{
+  "name": "noteappnodejsapi",
+  "version": "0.0.1",
+  "description": "note app nodejs api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhungQuangDai98/notes-app-express-api.git"
+  },
+  "keywords": [
+    "note",
+    "app",
+    "nodejs",
+    "api"
+  ],
+  "author": "Quang Dai <phungquangdai98@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PhungQuangDai98/notes-app-express-api/issues"
+  },
+  "homepage": "https://github.com/PhungQuangDai98/notes-app-express-api#readme",
+  "dependencies": {
+    "bcrypto": "^5.4.0",
+    "body-parser": "^1.19.1",
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "helmet": "^5.0.1",
+    "lodash": "^4.17.21",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.1.7",
+    "morgan": "^1.10.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
