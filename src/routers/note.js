@@ -7,9 +7,10 @@ router.get("/", (req, res) => {
 });
 
 // get note list
-router.get("/user", async (req, res) => {
+router.get("/user/:userId", async (req, res) => {
   try{
-    const notes = await NoteModel.find({userId: req.body.userId}).select("-userId").select("-createdAt");
+    const notes = await NoteModel.find({userId: req.params.userId}).select("-userId").select("-createdAt");
+    console.log(req.params.userId);
     if(notes.length === 0){
       res.json({
         message: "The user has no record yet or user not exist",
